@@ -6,7 +6,8 @@ const Wrap = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 0;
+    padding: 70px 0;
+    border-top: 1px solid #dedede;
 `
 const Conteiner = styled.div`
     width: 1000px;

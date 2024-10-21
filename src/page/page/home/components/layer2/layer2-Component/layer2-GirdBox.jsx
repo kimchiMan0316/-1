@@ -6,19 +6,28 @@ const Wrap = styled.div`
     transition: all 0.3s ease-in-out;
     width: 100%;
     height: 100%;
-    background-color: aliceblue;
     border-radius: 16px;
     display: flex;
     justify-content: left;
     height: 100%;
+    background-image: url("./image/main3.jpg");
     &:hover{
-        box-shadow: 2px 2px 16px #d4d4d4;
+        box-shadow: 2px 2px 16px #a0a0a0;
+        backdrop-filter: blur(10px);
     }
 `
 const Conteiner = styled.div`
     transition: all 0.3s ease-in-out;
     margin: 10px 16px;
     margin-bottom: 10px;
+`
+const Blur = styled.div`
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    &:hover{
+        backdrop-filter: blur(20px);
+    }
 `
 const STitle = styled.div`
     transition: all 0.3s ease-in-out;
@@ -57,13 +66,15 @@ export default function Layer2Box({title ,text, sTitle}){
         setArticle(true)
     }
     return(
-        <Wrap onMouseEnter={boxInf} onMouseLeave={boxInfDown}>
-            <Conteiner article = {article}>
-                <STitle article = {article}>{sTitle}</STitle>
-                <Title article = {article}>{title}</Title>
-                { article ? null:<Text article = {article}>{text}</Text>} 
-                { article ? <CiCirclePlus size={40} />:null} 
-            </Conteiner>
+        <Wrap onMouseEnter={boxInf} onMouseLeave={boxInfDown} article = {article}>
+            <Blur>
+                <Conteiner article = {article}>
+                    <STitle article = {article}>{sTitle}</STitle>
+                    <Title article = {article}>{title}</Title>
+                    { article ? null:<Text article = {article}>{text}</Text>} 
+                    { article ? <CiCirclePlus size={40} />:null} 
+                </Conteiner>
+            </Blur>
         </Wrap>
     );
 }

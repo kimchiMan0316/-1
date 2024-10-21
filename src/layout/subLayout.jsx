@@ -36,7 +36,7 @@ export default function SubLayout(){
                 <NavBox>
                     <Link to="/"><TopLayoutButton text={"홈"} backgroundColor={"transparent"} color={"#4e5968"}/></Link>
                     <Link to="/employment"><TopLayoutButton text={"지원"} backgroundColor={"transparent"} color={"#4e5968"}/></Link>
-                    <Link to="/"><TopLayoutButton text={"untity 문화"} backgroundColor={"transparent"} color={"#4e5968"}/></Link>
+                    <Link to="/untity2"><TopLayoutButton text={"untity 문화"} backgroundColor={"transparent"} color={"#4e5968"}/></Link>
                 </NavBox>
             </Wrapper> 
         </Nav> 

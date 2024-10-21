@@ -10,6 +10,8 @@ const Wrap = styled.div`
     display: flex;
     border: none;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 `
 const Cover = styled.div`
     z-index: 2;
@@ -36,6 +38,8 @@ const Contenier = styled.div`
     align-items: center;
 `
 const Image = styled.div`
+    height: 300px;
+    width: 250px;
 `
 const CoverImage = styled.img`
     width: 100%;
@@ -50,6 +54,7 @@ const Text = styled.h1`
 export default function Teamprofile({image, name, content}){
     return(
         <Wrap>
+            <Text>박설호</Text>
             <Cover>
                 <Text>박설호</Text>
                 <Text name="subText">섹시한 남자</Text>

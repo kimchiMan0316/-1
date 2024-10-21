@@ -6,6 +6,7 @@ const Wrap = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 75vh;
     margin: 80px 0;
 `
 const Title = styled.h1`
@@ -13,7 +14,9 @@ const Title = styled.h1`
     font-size: 32px;
     margin: 30px;
     font-weight: 500;
+    margin-bottom: 10px;
     &[name="subTitle"]{
+        line-height: 8px;
         font-size: 18px;
         margin: 10px;
         color: gray;
@@ -105,6 +108,7 @@ export default function EmploymentForm(){
     }
     const handlePhoneNumber = (e) =>{
         setPhoneNumber(e.target.value);
+        
         
     }
     const handleSelect = (e) =>{
