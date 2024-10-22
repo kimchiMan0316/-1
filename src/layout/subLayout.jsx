@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import TopLayoutButton from "../layout/layoutComponent/button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Nav = styled.div`
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     width: 100%;
-    border: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    background-color: white;
 `
 const Wrapper = styled.div`
     width: 1000px;
@@ -31,7 +34,9 @@ export default function SubLayout(){
         <Nav>
             <Wrapper>
                 <Logo>
-                    <LogoImage src="./image/untityLogo.png"></LogoImage>
+                    <Link to="/">
+                        <LogoImage src="./image/untityLogo.png"></LogoImage>
+                    </Link>
                 </Logo>
                 <NavBox>
                     <Link to="/"><TopLayoutButton text={"홈"} backgroundColor={"transparent"} color={"#4e5968"}/></Link>

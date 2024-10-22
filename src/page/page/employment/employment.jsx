@@ -73,14 +73,7 @@ export default function Employment(){
         <Wrap>
             <SubLayout/>       
             <Conteiner> 
-                {/* <Middle>
-                    <TextArea>
-                        <Text name="title">같이 일해봅시다.</Text>
-                        <Text>같이 성장하고 같이 농갈라먹는 untity2</Text>
-                    </TextArea>
-                </Middle> */}
                 <EmploymentForm/>
-            
             </Conteiner>
             <Footer/>
         </Wrap>
