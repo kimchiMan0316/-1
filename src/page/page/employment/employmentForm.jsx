@@ -144,7 +144,7 @@ export default function EmploymentForm(){
     }
     return(
         <Wrap>
-            <div style={{width:"100%"}}>
+            <div style={{width:"100%" }}>
                 <Title>지원서 작성하기</Title>
                 <Title name="subTitle" style={{marginBottom:"40px"}}>Untity Web-Developer</Title>
             </div>
