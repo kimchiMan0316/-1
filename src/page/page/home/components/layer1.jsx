@@ -107,7 +107,7 @@ export default function Layer1(){
 const Button = () => {
     return(
         <ButtonWrap>
-            <ButtonM ><Link to="/employment">지원하기</Link></ButtonM>
+            <ButtonM><Link to="/employment">지원하기</Link></ButtonM>
         </ButtonWrap>
     );
 }

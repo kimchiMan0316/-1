@@ -10,6 +10,7 @@ const Wrap = styled.div`
     align-items: center;
 `
 const Contenier = styled.div`
+    margin: 70px;
     height: 40vh;
     width: 1000px;
     background-color: aliceblue;
